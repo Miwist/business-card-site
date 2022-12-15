@@ -1,0 +1,78 @@
+@import "../css/variables";
+
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 80px;
+  background-color: #031920;
+
+  .Header_contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+    i {
+      font-size: 24px;
+      color: #7f8285;
+      margin-left: 30px;
+    }
+    p {
+      font-size: 20px;
+      color: #7f8285;
+      margin-left: 10px;
+    }
+  }
+
+  .Header_nav {
+    a,
+    Link {
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #7f8285;
+      margin-left: 15px;
+    }
+    a:hover,
+    Link:hover {
+      border-bottom: 2px solid #7f8285;
+    }
+
+    a:active,
+    Link:active {
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .Header {
+    font-family: "Gilroy";
+    .Header_contacts {
+      img {
+        width: 30px;
+        height: 30px;
+      }
+      i {
+        font-size: 17px;
+        margin-left: 10px;
+      }
+      p {
+        font-size: 18px;
+        color: #7f8285;
+        margin-left: 5px;
+      }
+    }
+    .Header_nav {
+      a,
+      Link {
+        display: none;
+      }
+    }
+  }
+}

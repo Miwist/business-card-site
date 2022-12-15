@@ -1,0 +1,86 @@
+@import "../../css/variables";
+
+.theme {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $gblue;
+  height: 800px;
+  i {
+    font-size: 52px;
+    color: $blue;
+    cursor: pointer;
+  }
+
+  i:hover {
+    color: $yellow;
+  }
+
+  .theme_box {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    .theme_item__square {
+      min-width: 100%;
+      max-width: 100%;
+      width: 500px;
+      height: 500px;
+      box-shadow: 10px 10px 10px 10px black;
+      transition: rotate;
+      transition-property: transform;
+      transition-duration: 800ms;
+      transition-timing-function: ease-in-out;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transition: rotate;
+        transition-property: transform;
+        transition-duration: 1000ms;
+        transition-timing-function: ease-in-out;
+ 
+      }
+    }
+    .theme_item__icons {
+      transform: rotate(-45deg);
+      img {
+        width: 28px;
+        height: 28px;
+        margin-left: 20px;
+        cursor: pointer;
+      }
+      img:hover {
+        opacity: 0.9;
+      }
+      img:active {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .theme {
+    height: 360px;
+    i {
+      font-size: 42px;
+    }
+    .theme_box {
+      .theme_item__square {
+        width: 160px;
+        height: 160px;
+        box-shadow: 5px 5px 5px 5px black;
+      }
+      .theme_item__icons {
+        img {
+          width: 16px;
+          height: 16px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

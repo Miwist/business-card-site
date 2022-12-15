@@ -1,0 +1,176 @@
+@import "../../css/variables";
+
+.AboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+  background-color: $gray;
+  font-family: "Gilroy";
+  h1,
+  h2 {
+    font-size: 34px;
+    color: white;
+    font-family: "Gilroy Semibold";
+  }
+  p {
+    color: white;
+    font-size: 20px;
+    line-height: 2rem;
+  }
+
+  .AboutMe_About {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .description {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      max-width: 500px;
+      min-height: 500px;
+      border-radius: 5px;
+      background-color: #577b8a;
+      box-shadow: 10px 10px 10px black;
+      img {
+        max-width: 300px;
+        min-height: 200px;
+        border-radius: 25%;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 600px;
+    height: 600px;
+    margin-top: 100px;
+    margin-left: 100px;
+
+    .skills__box {
+      transition: opacity;
+      transition-property: opacity;
+      transition-duration: 600ms;
+      transition-timing-function: ease-in-out;
+    }
+    .title {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      i {
+        font-size: 28px;
+        color: #ff8f5e;
+      }
+      h2 {
+        margin-left: 10px;
+      }
+      margin-bottom: 30px;
+    }
+    .skills__hard {
+      p {
+        margin-bottom: 10px;
+      }
+
+      .skills__box {
+        margin-bottom: 28px;
+        button {
+          width: 100px;
+          height: 30px;
+          background-color: $yellow;
+          color: white;
+          border-radius: 10px;
+          cursor: pointer;
+          margin-top: 10px;
+          border: none;
+        }
+        button:hover {
+          border: 1px solid black;
+        }
+        button:active {
+          opacity: 0.5;
+        }
+        .progress {
+          min-width: 180px;
+          height: 15px;
+          background-color: #577b8a;
+          border-radius: 10px;
+          .inProgress {
+            height: 100%;
+            background-color: #68c7e3;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+
+    .skills__soft {
+      margin-left: 100px;
+      p {
+        margin-bottom: 10px;
+      }
+      .skills__box {
+        margin-bottom: 20px;
+        .progress {
+          min-width: 180px;
+          height: 15px;
+          background-color: #577b8a;
+          border-radius: 10px;
+          .inProgress {
+            height: 100%;
+            background-color: $yellow;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .AboutMe {
+    height: 100%;
+    h1 {
+     margin-top: 20px;
+     margin-bottom: 20px;
+    }
+    .AboutMe_About {
+      display: flex;
+      flex-direction: column;
+     
+      .description {
+        max-width: 320px;
+
+        h2 {
+          font-size: 22px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+      .skills {
+        flex-direction: column;
+        max-width: 320px;
+        height: 100%;
+        margin-left: 0;
+
+        .skills__soft {
+          margin-top: 40px;
+          margin-left: 0;
+        }
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

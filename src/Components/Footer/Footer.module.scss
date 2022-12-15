@@ -1,0 +1,136 @@
+@import "../css/variables";
+
+.Footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 200px;
+  background-color: #031920;
+  color: #7f8285;
+  font-family: "Gilroy";
+
+  .Footer_portfolio {
+    .Footer__logo {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      max-width: 100px;
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+      p {
+        font-size: 20px;
+        margin-left: 40px;
+      }
+    }
+  }
+
+  .Footer_contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 28px;
+      height: 28px;
+      cursor: pointer;
+      margin-left: 20px;
+    }
+    img:hover {
+      opacity: 0.85;
+    }
+
+    img:active {
+      opacity: 0.5;
+    }
+
+    .Footer_contacts__item {
+      display: flex;
+      flex-direction: row;
+      i {
+        font-size: 24px;
+        color: #7f8285;
+        margin-left: 60px;
+      }
+      p {
+        font-size: 20px;
+        color: #7f8285;
+        margin-left: 10px;
+      }
+      margin-bottom: 20px;
+    }
+  }
+
+  .Footer_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    .Footer__nav {
+      a,
+      Link {
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #7f8285;
+        margin-left: 15px;
+      }
+      a:hover,
+      Link:hover {
+        border-bottom: 2px solid #7f8285;
+      }
+
+      a:active,
+      Link:active {
+        color: white;
+      }
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .Footer {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+
+    .Footer_portfolio {
+      .Footer__logo {
+        padding: 5px;
+       max-width: 100%;
+        p {
+          margin-left: 10px;
+        }
+        margin-bottom: 20px;
+      }
+    }
+    .Footer_contacts {
+      display: flex;
+      flex-direction: column;
+      .Footer_contacts__item {
+        i {
+          margin-left: 0;
+        }
+      }
+    }
+
+    .Footer_description {
+      margin-left: 0;
+      margin-bottom: 40px;
+      .Footer__nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        a {
+          margin-left: 0;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
