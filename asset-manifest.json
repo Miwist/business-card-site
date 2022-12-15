@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/business-card-site/static/css/main.e53ef99c.css",
+    "main.js": "/business-card-site/static/js/main.647cd26d.js",
+    "static/media/code1.jpg": "/business-card-site/static/media/code1.830851674489f1fb9abd.jpg",
+    "static/media/work6.png": "/business-card-site/static/media/work6.fc9837a0d00cd91d6317.png",
+    "static/media/work5.png": "/business-card-site/static/media/work5.3ece5748e35383e0bb25.png",
+    "static/media/work2.png": "/business-card-site/static/media/work2.b5978933ea6e8c298d77.png",
+    "static/media/work4.png": "/business-card-site/static/media/work4.e08cc69f436b00de204d.png",
+    "static/media/work3.png": "/business-card-site/static/media/work3.f6c80d449e6689b2bf56.png",
+    "static/media/work7.png": "/business-card-site/static/media/work7.8924cf9bda18923cb2eb.png",
+    "static/media/work1.png": "/business-card-site/static/media/work1.ad055adc8daff7721299.png",
+    "static/media/Gilroy-SemiBold.eot": "/business-card-site/static/media/Gilroy-SemiBold.8134b9ab378c54626928.eot",
+    "static/media/Gilroy-Regular.eot": "/business-card-site/static/media/Gilroy-Regular.1d051d9d4215c09cbcaa.eot",
+    "static/media/Michail.jpeg": "/business-card-site/static/media/Michail.5e06ccae7a2dbeb79024.jpeg",
+    "static/media/Gilroy-Regular.ttf": "/business-card-site/static/media/Gilroy-Regular.b91b0127c56a8e5f9e83.ttf",
+    "static/media/Gilroy-SemiBold.ttf": "/business-card-site/static/media/Gilroy-SemiBold.6780292641f883b3dad3.ttf",
+    "static/media/Gilroy-SemiBold.woff": "/business-card-site/static/media/Gilroy-SemiBold.e38937dbf8202c144802.woff",
+    "static/media/Gilroy-Regular.woff": "/business-card-site/static/media/Gilroy-Regular.31d54a4b841c0e438f13.woff",
+    "static/media/telegram.png": "/business-card-site/static/media/telegram.04c3d4028b28944f72b9.png",
+    "static/media/whatsapp.png": "/business-card-site/static/media/whatsapp.c75084c4f67a9e4b0ba3.png",
+    "static/media/coding.png": "/business-card-site/static/media/coding.21013e11d0f4a2925ffb.png",
+    "static/media/vk.png": "/business-card-site/static/media/vk.aef20084ee579ee27adf.png",
+    "index.html": "/business-card-site/index.html",
+    "main.e53ef99c.css.map": "/business-card-site/static/css/main.e53ef99c.css.map",
+    "main.647cd26d.js.map": "/business-card-site/static/js/main.647cd26d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e53ef99c.css",
+    "static/js/main.647cd26d.js"
+  ]
+}
